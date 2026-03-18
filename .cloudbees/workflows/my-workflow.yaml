@@ -3,6 +3,11 @@ kind: workflow
 name: relWorkflow
 on:
   workflow_dispatch:
+    inputs:
+      manifest:
+        type: string
+        required: true
+        description: A sample manifest should go here, to help user
 jobs:
   build:
     steps:
